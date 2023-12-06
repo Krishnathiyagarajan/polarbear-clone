@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+            href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <!-- wow.js animation -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+     <!-- icons cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- stripe cdn -->
+     <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        *{
+            scroll-behavior: smooth;
+        }
+        /* #choc,#choc1,#choc2{
+            padding-top: 180px;
+        } */
+        #nav{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            position: sticky;
+            top: 0px;
+            background-color: #fff;
+            z-index: 1;
+        }
+        #icon{
+            margin-top: 20px;
+            width: 20%;
+            list-style: none;
+            margin-left: 100px;
+        }
+        #nav1{
+            width: 80%;
+            margin-top: 15px;
+           
+        }
+        #nul{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+        #top{
+            width: 100%;
+            background-color: rgb(238, 234, 231);
+            justify-content: flex-end;
+            height: 20px;
+        }
+        #top1{
+            margin-left: 78%;
+        }
+        
+        #nul li:hover{
+            color: aqua;
+        }
+        #men{
+                width: 100%;
+                background-color: rgb(252,213,72);
+                color: black;
+                height: 50px;
+                position: sticky;
+                top: 50px;
+                z-index: 1;
+            }
+            #men h1{
+                padding-left: 10%;
+                padding-top: 12px;
+            }
+            #menu{
+                width: 80%;
+                margin-left: 10%;
+                display: flex;
+                position: relative;
+            }
+            #aside{
+                width: 30%;
+                top: 150px;
+               
+            }
+            #menuleft{
+                list-style-type: none;
+                line-height: 50px;
+            }
+            #asidediv{
+                position: sticky;
+                top: 150px;
+            }
+            .div2{
+                width: 70%;
+                top: 150px;
+            }
+            #card{
+                width: 100%;
+                display: flex;
+                height: 400px;
+                justify-content: space-around;
+            }
+            .c1{
+                width: 30%;
+                height: 300px;
+                padding-top: 10px;
+            }
+            .img{
+                width: 80%;
+                height: 150px;
+                padding-left: 10%;
+            }
+            .imd{
+                margin-left: 10%;
+                width: 80%;
+                text-align: center;
+            }
+.bit {
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 5px;
+ background: #183153;
+ font-family: "Montserrat", sans-serif;
+ box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+ overflow: hidden;
+ border: none;
+ width: 125px;
+ height: 25px;
+ margin-left: 28px;
+ color: #FFD401;
+ 
+}
+
+.bit:after {
+ content: "ADD TO CART";
+ width: 0%;
+ height: 100%;
+ background:#FFD401;
+ color: #183153;
+ position: absolute;
+ transition: all 0.4s ease-in-out;
+ right: 0;
+ 
+}
+
+.bit:hover::after {
+ right: auto;
+ left: 0;
+ width: 100%;
+ 
+}
+
+.bit span {
+ text-align: center;
+ text-decoration: none;
+ width: 100%;
+ padding: 18px 25px;
+ color: #fff;
+ font-size: 1.125em;
+ font-weight: 700;
+ letter-spacing: 0.3em;
+ z-index: 20;
+ transition: all 0.3s ease-in-out;
+ color: #183153;
+}
+
+.bit:hover span {
+ color: #183153;
+ animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+ 0% {
+  transform: scale(1);
+ }
+
+ 50% {
+  transform: scale(0.95);
+ }
+
+ 100% {
+  transform: scale(1);
+ }
+}
+#footer{
+                background-color: rgb(252,213,72);
+                width:100%;
+                height: 400px;
+            }
+            #foot{
+                width: 80%;
+                margin-left: 10%;
+                display: flex;
+                justify-content: space-around;
+                
+            }
+            .fd{
+                width: 23%;
+                height: 400px;
+                margin-top: 25px;
+            }
+            .ull{
+                list-style-type: none;
+                margin-top: 105px;
+            }
+            .ull li:hover{
+                color: grey;
+            }
+            #ico{
+                width: 100%;
+                justify-content: space-around;
+                display: flex;
+                margin-top: 125px;
+            }
+            #ico a{
+                padding: 5px;
+                border-radius: 50%;
+                border: 1px solid black;
+                background-color:black;
+                color: white;
+            }
+            #ico a:hover{
+                background-color:  rgb(252,213,72); 
+                color:black;
+            }
+            #modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 100px;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+}
+
+#mc {
+    background-color: rgb(252,213,72);
+    margin: auto;
+    padding: 30px 35px 100px 35px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+#x {
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    color: #aaa;
+}
+
+#x:hover {
+    cursor: pointer;
+    color: black;
+}
+
+#modal input {
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+#hidee{
+            width: 100%;
+            position: absolute;justify-content: space-around;background-color: rgb(18,163,196);
+            height: 200px;
+            margin-top: -7px;
+            z-index: 1;display: none;
+            margin-left: -504px;
+            }
+            .h1{
+        border: 1px solid white;
+        height: 200px;
+        width: 100%;
+        padding-left: 10px;
+    }
+    .h1 h3{
+        color: rgb(252,213,72);
+    }
+
+    </style>
+</head>
+
+<body>
+    <section id="top">
+        <div id="top1">For Polar Bear franchisee: <a href="#">Apply online / Email us.</a></div>
+    </section>
+    <section id="nav">
+        <div id="icon">
+           <a href="index.html"> <li><img width="200px" src="imagepolar/icon.svg" alt=""></li></a>
+        </div>
+        <div id="nav1">
+            <ul id="nul">
+                <div id="ab">
+                    <div>
+                        <a  href="polar.html">
+                            <li>About</li>
+                        </a>
+                    </div>
+                    <br><br>
+                    <div id="hidee">
+                        <div style="display:flex;">
+                            <div class="h1">
+                                <h3>STORY</h3>
+                                <p>How our love for ice cream and the vision of scooping up happiness to customers all over the country transformed into Polar Bear – The Ice Cream Sundae Zone. </p></span>
+                            </div>
+                            <div class="h1">
+                                <h3>VALUES IN ACTION</h3>
+                                <p>How our love for ice cream and the vision of scooping up happiness to customers all over the country transformed into Polar Bear – The Ice Cream Sundae Zone. </p></span>
+                            </div>
+                            <div class="h1">
+                                <h3>Story</h3>
+                                <p>How our love for ice cream and the vision of scooping up happiness to customers all over the country transformed into Polar Bear – The Ice Cream Sundae Zone. </p></span>
+                            </div>
+                            <div class="h1">
+                                <h3>Story</h3>
+                                <p>How our love for ice cream and the vision of scooping up happiness to customers all over the country transformed into Polar Bear – The Ice Cream Sundae Zone. </p></span>
+                            </div>
+                            <div class="h1">
+                                <h3>Story</h3>
+                                <p>How our love for ice cream and the vision of scooping up happiness to customers all over the country transformed into Polar Bear – The Ice Cream Sundae Zone. </p></span>
+                            </div>
+                            <div class="h1">
+                                <h3>Story</h3>
+                                <p>How our love for ice cream and the vision of scooping up happiness to customers all over the country transformed into Polar Bear – The Ice Cream Sundae Zone. </p></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="menu.html">
+                    <li>Menu</li>
+                </a>
+                <li>Franchise</li>
+                <a href="more.html"><li>More Fun</li></a>
+                <a href="sustain.html"><li>Sustainability</li></a>
+            </ul>
+        </div>
+    </section>
+    <section id="men">
+        <h1>MENU</h1>
+    </section>
+    <br>
+    <section id="menu">
+        <aside id="aside">
+            <div id="asidediv">
+                <ul id="menuleft">
+                    <a href="#choc"><li >
+                        CHOCOLATE SUNDAES
+                    </li></a>
+                    <a href="#choc1">
+                        <li>
+                            DEAD BY CHOCOLATE
+                        </li>
+                    </a>
+                    <a href="#choc2">
+                        <li>
+                            INTERNATIONAL CLASSICS
+                        </li>
+                    </a>
+                    
+                    <a href="#choc3">
+                        <li>
+                            FRUIT SUNDAES
+                        </li>
+                    </a>
+                    <a href="#choc4">
+                        <li>
+                            HOT CHOCALATE FUDGE
+                        </li>
+                    </a>
+                    <a href="#choc5">
+                        <li>
+                            FAMILY SUNDAES
+                        </li>
+                    </a>
+                    <a href="#choc6">
+                        <li>
+                            KIDS SUNDAES
+                        </li>
+                    </a>
+                    <a href="#choc7">
+                        <li>
+                            ICE-CREAM CAKES
+                        </li>
+                    </a>
+                    <a href="#choc8">
+                        <li>
+                            TAKE-AWAY SUNDAY TUBS
+                        </li>
+                    </a>
+
+                </ul>
+            </div>
+        </aside>
+        <div class="div2">
+            <img class="wow animate__animated animate__rubberBand"  style="padding-top: 30px;position: absolute;" width="100%" height="100px"  src="imagepolar/icon.svg" alt="">
+            <div id="choc" style="width: 100%;height: 150px; padding-top: 30px;">
+            </div>
+            <p  style="text-align: center;" class="wow animate__animated animate__swing"  ><strong>CHOCALATE SUNDAES</strong></p>
+            <div id="card" >
+                <div class="c1 wow animate__animated animate__pulse"  > 
+                    <div class="img" >
+                        <img width="100%" height="150px" src="imagepolar/chocobrownie-fudge-150x150-1.jpg" alt="">
+                    </div>
+                    <div class="imd">
+                        <h4 style="color: aqua;">
+                            Chocalate Brownie Fudge
+                        </h4>
+                        <p>Rs-195.00</p>
+                        <button class="bit" onclick="ab()">
+                            ADD TO CART
+                        </button>
+                    </div>
+
+                </div>
+                <div class="c1 wow animate__animated animate__pulse"      >
+                    <div class="img">
+                        <img width="100%" height="150px" src="imagepolar/brownie-fudge-1.jpg" alt="">
+                    </div>
+                    <div class="imd">
+                        <h4 style="color: aqua;">
+                            Brownie Fudge
+                        </h4>
+                        <p>Rs-185.00</p>
+                        <button class="bit" onclick="ab()">
+                            ADD TO CART
+                        </button>
+                    </div>
+                </div>
+                <div class="c1 wow animate__animated animate__pulse"     >
+                    <div class="img">
+                        <img width="100%" height="150px" src="imagepolar/ChocoLavaFudge-150x150-1.jpg" alt="">
+                    </div>
+                    <div class="imd">
+                        <h3 style="color: aqua;">
+                            Brownie Fudge
+                        </h3>
+                        <p>Rs-185.00</p>
+                        <button class="bit" onclick="ab()">
+                            ADD TO CART
+                        </button>
+                    </div>
+                </div>
+            </div>
+    <div id="card">
+                <div class="c1 wow animate__animated animate__pulse"      >
+                    <div class="img">
+                        <img width="100%" height="150px" src="imagepolar/Cookie-Monster.jpg" alt="">
+                    </div>
+                    <div class="imd">
+                        <h4 style="color: aqua;">
+                            Chocalate Brownie Fudge
+                        </h4>
+                        <p>Rs-195.00</p>
+                        <button class="bit" onclick="ab()">
+                            ADD TO CART
+                        </button>
+                    </div>
+                </div>
+                <div class="c1">
+
+                </div>
+                <div class="c1">
+
+                </div>
+
+           
+        </div>
+        <div id="choc1" style="width: 100%;height: 150px;"></div>
+        <!-- second menu -->
+        <p  id="choc1" style="text-align: center;"   class="wow animate__animated animate__swing"   ><strong>DEAD BY CHOCOLATE</strong></p>
+        <div id="card">
+            <div class="c1 wow animate__animated animate__pulse"      >
+                <div class="img">
+                    <img width="100%" height="150px" src="imagepolar/dbc-150x150-1.jpg" alt="">
+                </div>
+                <div class="imd">
+                    <h4 style="color: aqua;">
+                        Chocalate Brownie Fudge
+                    </h4>
+                    <p>Rs-195.00</p>
+                    <button class="bit" onclick="ab()">
+                        ADD TO CART
+                    </button>
+                </div>
+
+            </div>
+            <div class="c1 wow animate__animated animate__pulse"      >
+                <div class="img">
+                    <img width="100%" height="150px" src="imagepolar/my-dbc.jpg" alt="">
+                </div>
+                <div class="imd">
+                    <h4 style="color: aqua;">
+                        Brownie Fudge
+                    </h4>
+                    <p>Rs-185.00</p>
+                    <button class="bit" onclick="ab()">
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+            <div class="c1 wow animate__animated animate__pulse"     >
+                <div class="img">
+                    <img width="100%" height="150px" src="imagepolar/Mega-DBC-150x150-1.jpg" alt="">
+                </div>
+                <div class="imd">
+                    <h3 style="color: aqua;">
+                        Brownie Fudge
+                    </h3>
+                    <p>Rs-185.00</p>
+                    <button class="bit" onclick="ab()">
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+        </div>
+<div id="card">
+            <div class="c1">
+            
+            </div>
+            <div class="c1">
+
+            </div>
+            <div class="c1">
+
+            </div>
+
+       
+    </div>
+    <div id="choc2" style="width: 100%;height: 150px;"></div>
+        <!-- third section -->
+        <p style="text-align: center;"    class="wow animate__animated animate__swing"  ><strong>INTERNATIONAL CLASSICS</strong></p>
+        <div id="card">
+            <div class="c1 wow animate__animated animate__pulse"     >
+                <div class="img">
+                    <img width="100%" height="150px" src="imagepolar/dbc-150x150-1.jpg" alt="">
+                </div>
+                <div class="imd">
+                    <h4 style="color: aqua;">
+                        Chocalate Brownie Fudge
+                    </h4>
+                    <p>Rs-195.00</p>
+                    <button class="bit" onclick="ab()">
+                        ADD TO CART
+                    </button>
+                </div>
+
+            </div>
+            <div class="c1 wow animate__animated animate__pulse"      >
+                <div class="img">
+                    <img width="100%" height="150px" src="imagepolar/my-dbc.jpg" alt="">
+                </div>
+                <div class="imd">
+                    <h4 style="color: aqua;">
+                        Brownie Fudge
+                    </h4>
+                    <p>Rs-185.00</p>
+                    <button class="bit" onclick="ab()">
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+            <div class="c1 wow animate__animated animate__pulse"      >
+                <div class="img">
+                    <img width="100%" height="150px" src="imagepolar/Mega-DBC-150x150-1.jpg" alt="">
+                </div>
+                <div class="imd">
+                    <h3 style="color: aqua;">
+                        Brownie Fudge
+                    </h3>
+                    <p>Rs-185.00</p>
+                    <button class="bit" onclick="ab()">
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="card">
+            <div class="c1">
+            
+            </div>
+            <div class="c1">
+
+            </div>
+            <div class="c1">
+
+            </div>
+
+       
+    </div>
+    <div id="choc3" style="width: 100%;height: 150px;">
+
+    </div>
+    <!-- fourth section -->
+    <p  style="text-align: center;"   class="wow animate__animated animate__swing"   ><strong>FRUIT SUNDAES</strong></p>
+    <div id="card">
+        <div class="c1 wow animate__animated animate__pulse" >
+            <div class="img">
+                <img width="100%" height="150px" src="imagepolar/dbc-150x150-1.jpg" alt="">
+            </div>
+            <div class="imd">
+                <h4 style="color: aqua;">
+                    Chocalate Brownie Fudge
+                </h4>
+                <p>Rs-195.00</p>
+                <button class="bit" onclick="ab()">
+                    ADD TO CART
+                </button>
+            </div>
+
+        </div>
+        <div class="c1 wow animate__animated animate__pulse"      >
+            <div class="img">
+                <img width="100%" height="150px" src="imagepolar/my-dbc.jpg" alt="">
+            </div>
+            <div class="imd">
+                <h4 style="color: aqua;">
+                    Brownie Fudge
+                </h4>
+                <p>Rs-185.00</p>
+                <button class="bit" onclick="ab()">
+                    ADD TO CART
+                </button>
+            </div>
+        </div>
+        <div class="c1 wow animate__animated animate__pulse"     >
+            <div class="img">
+                <img width="100%" height="150px" src="imagepolar/Mega-DBC-150x150-1.jpg" alt="">
+            </div>
+            <div class="imd">
+                <h3 style="color: aqua;">
+                    Brownie Fudge
+                </h3>
+                <p>Rs-185.00</p>
+                <button class="bit" onclick="ab()">
+                    ADD TO CART
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="card">
+        <div class="c1">
+        
+        </div>
+        <div class="c1">
+
+        </div>
+        <div class="c1">
+
+        </div>
+    </div>
+    <div id="choc4" style="width: 100%;height: 150px;"></div>
+    <!-- fifth section -->
+    <p style="text-align: center;"   class="wow animate__animated animate__swing"   ><strong>HOT CHOCOLATE FUDGE</strong></p>
+    <div id="card">
+        <div class="c1 wow animate__animated animate__pulse"     >
+            <div class="img">
+                <img width="100%" height="150px" src="imagepolar/dbc-150x150-1.jpg" alt="">
+            </div>
+            <div class="imd">
+                <h4 style="color: aqua;">
+                    Chocalate Brownie Fudge
+                </h4>
+                <p>Rs-195.00</p>
+                <button class="bit" onclick="ab()">
+                    ADD TO CART
+                </button>
+            </div>
+
+        </div>
+        <div class="c1 wow animate__animated animate__pulse"      >
+            <div class="img">
+                <img width="100%" height="150px" src="imagepolar/my-dbc.jpg" alt="">
+            </div>
+            <div class="imd">
+                <h4 style="color: aqua;">
+                    Brownie Fudge
+                </h4>
+                <p>Rs-185.00</p>
+                <button class="bit" onclick="ab()">
+                    ADD TO CART
+                </button>
+            </div>
+        </div>
+        <div class="c1 wow animate__animated animate__pulse" >
+            <div class="img">
+                <img width="100%" height="150px" src="imagepolar/Mega-DBC-150x150-1.jpg" alt="">
+            </div>
+            <div class="imd">
+                <h3 style="color: aqua;">
+                    Brownie Fudge
+                </h3>
+                <p>Rs-185.00</p>
+                <button class="bit" onclick="ab()">
+                    ADD TO CART
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="card">
+        <div class="c1">
+        
+        </div>
+        <div class="c1">
+
+        </div>
+        <div class="c1">
+
+        </div>
+    </div>
+    <div id="choc5" style="width: 100%;height: 150px;"></div>
+    <!-- sixth section -->
+    <p  style="text-align: center;"  class="wow animate__animated animate__swing"    ><strong>FAMILY SUNDAES</strong></p>
+    <div id="card">
+        <div class="c1 wow animate__animated animate__pulse"      >
+            <div class="img">
+                <img width="100%" height="150px" src="imagepolar/dbc-150x150-1.jpg" alt="">
+            </div>
+            <div class="imd">
+                <h4 style="color: aqua;">
+                    Chocalate Brownie Fudge
+                </h4>
+                <p>Rs-195.00</p>
+                <button class="bit" onclick="ab()">
+                    ADD TO CART
+                </button>
+            </div>
+
+        </div>
+        <div class="c1 wow animate__animated animate__pulse"      >
+            <div class="img">
+                <img width="100%" height="150px" src="imagepolar/my-dbc.jpg" alt="">
+            </div>
+            <div class="imd">
+                <h4 style="color: aqua;">
+                    Brownie Fudge
+                </h4>
+                <p>Rs-185.00</p>
+                <button class="bit" onclick="ab()">
+                    ADD TO CART
+                </button>
+            </div>
+        </div>
+        <div class="c1 wow animate__animated animate__pulse"     >
+            <div class="img">
+                <img width="100%" height="150px" src="imagepolar/Mega-DBC-150x150-1.jpg" alt="">
+            </div>
+            <div class="imd">
+                <h3 style="color: aqua;">
+                    Brownie Fudge
+                </h3>
+                <p>Rs-185.00</p>
+                <button class="bit" onclick="ab()">
+                    ADD TO CART
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="card">
+        <div class="c1">
+        
+        </div>
+        <div class="c1">
+
+        </div>
+        <div class="c1">
+
+        </div>
+
+   
+</div>
+<div id="choc6" style="width: 100%;height: 150px;"></div>
+    <!-- seventh section -->
+    <p  style="text-align: center;"  class="wow animate__animated animate__swing"    ><strong>KIDS SUNDAES</strong></p>
+    <div id="card">
+        <div class="c1 wow animate__animated animate__pulse"     >
+            <div class="img">
+                <img width="100%" height="150px" src="imagepolar/dbc-150x150-1.jpg" alt="">
+            </div>
+            <div class="imd">
+                <h4 style="color: aqua;">
+                    Chocalate Brownie Fudge
+                </h4>
+                <p>Rs-195.00</p>
+                <button class="bit" onclick="ab()">
+                    ADD TO CART
+                </button>
+            </div>
+
+        </div>
+        <div class="c1 wow animate__animated animate__pulse"      >
+            <div class="img">
+                <img width="100%" height="150px" src="imagepolar/my-dbc.jpg" alt="">
+            </div>
+            <div class="imd">
+                <h4 style="color: aqua;">
+                    Brownie Fudge
+                </h4>
+                <p>Rs-185.00</p>
+                <button class="bit" onclick="ab()">
+                    ADD TO CART
+                </button>
+            </div>
+        </div>
+        <div class="c1 wow animate__animated animate__pulse">
+            <div class="img">
+                <img width="100%" height="150px" src="imagepolar/Mega-DBC-150x150-1.jpg" alt="">
+            </div>
+            <div class="imd">
+                <h3 style="color: aqua;">
+                    Brownie Fudge
+                </h3>
+                <p>Rs-185.00</p>
+                <button class="bit" onclick="ab()">
+                    ADD TO CART
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="card">
+        <div class="c1">
+        
+        </div>
+        <div class="c1">
+
+        </div>
+        <div class="c1">
+
+        </div>
+
+   
+</div>
+<div id="choc7" style="width: 100%;height: 150px;"></div>
+    <!-- eight section -->
+    <p  style="text-align: center;"  class="wow animate__animated animate__swing"    ><strong>ICE-CREAM CAKES</strong></p>
+    <div id="card">
+        <div class="c1 wow animate__animated animate__pulse"      >
+            <div class="img">
+                <img width="100%" height="150px" src="imagepolar/dbc-150x150-1.jpg" alt="">
+            </div>
+            <div class="imd">
+                <h4 style="color: aqua;">
+                    Chocalate Brownie Fudge
+                </h4>
+                <p>Rs-195.00</p>
+                <button class="bit" onclick="ab()">
+                    ADD TO CART
+                </button>
+            </div>
+
+        </div>
+        <div class="c1 wow animate__animated animate__pulse"      >
+            <div class="img">
+                <img width="100%" height="150px" src="imagepolar/my-dbc.jpg" alt="">
+            </div>
+            <div class="imd">
+                <h4 style="color: aqua;">
+                    Brownie Fudge
+                </h4>
+                <p>Rs-185.00</p>
+                <button class="bit" onclick="ab()">
+                    ADD TO CART
+                </button>
+            </div>
+        </div>
+        <div class="c1"     >
+            <div class="img">
+                <img width="100%" height="150px" src="imagepolar/Mega-DBC-150x150-1.jpg" alt="">
+            </div>
+            <div class="imd">
+                <h3 style="color: aqua;">
+                    Brownie Fudge
+                </h3>
+                <p>Rs-185.00</p>
+                <button class="bit" onclick="ab()">
+                    ADD TO CART
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="card">
+        <div class="c1">
+        
+        </div>
+        <div class="c1">
+
+        </div>
+        <div class="c1">
+
+        </div>
+
+   
+</div>
+<div id="choc8" style="width: 100%;height: 150px;"></div>
+    <!-- eight section -->
+    <p  style="text-align: center;"  class="wow animate__animated animate__swing"    ><strong>TAKE-AWAY SUNDAY TUBS</strong></p>
+    <div id="card">
+        <div class="c1 wow animate__animated animate__pulse"      >
+            <div class="img">
+                <img width="100%" height="150px" src="imagepolar/dbc-150x150-1.jpg" alt="">
+            </div>
+            <div class="imd">
+                <h4 style="color: aqua;">
+                    Chocalate Brownie Fudge
+                </h4>
+                <p>Rs-195.00</p>
+                <button class="bit" onclick="ab()">
+                    ADD TO CART
+                </button>
+            </div>
+
+        </div>
+        <div class="c1 wow animate__animated animate__pulse"      >
+            <div class="img">
+                <img width="100%" height="150px" src="imagepolar/my-dbc.jpg" alt="">
+            </div>
+            <div class="imd">
+                <h4 style="color: aqua;">
+                    Brownie Fudge
+                </h4>
+                <p>Rs-185.00</p>
+                <button class="bit" onclick="ab()">
+                    ADD TO CART
+                </button>
+            </div>
+        </div>
+        <div class="c1"     >
+            <div class="img">
+                <img width="100%" height="150px" src="imagepolar/Mega-DBC-150x150-1.jpg" alt="">
+            </div>
+            <div class="imd">
+                <h3 style="color: aqua;">
+                    Brownie Fudge
+                </h3>
+                <p>Rs-185.00</p>
+                <button class="bit" onclick="ab()">
+                    ADD TO CART
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="card">
+        <div class="c1">
+        
+        </div>
+        <div class="c1">
+
+        </div>
+        <div class="c1">
+
+        </div>
+
+   
+</div>
+</div>
+      
+</section>
+<div id="modal">
+    <div id="mc">
+        <span id="x" onclick="x()">&times;</span>
+        <h2>START YOUR ORDER</h2><br><br>
+        <img src="imagepolar/qr.png" alt="" style="height: 200px;"> <br><br>
+        <stripe-buy-button
+  buy-button-id="buy_btn_1OHN66SDAFG8VYtQJJ1SS0vG"
+  publishable-key="pk_test_51OHMimSDAFG8VYtQfpFoeGWqYKftmgQrgbmw8cHSwfCzhr5SM8HKY1E9wovpH3KYvUaUrlVUZqdr8cSLyLjhIz8r00Yej9Oxvk"
+>
+</stripe-buy-button>
+</div>
+</div>
+<section id="footer">
+    <div id="foot">
+        <div class="fd">
+            <div  id="ico">
+            <a href=""><i class="fa fa-linkedin" style="font-size:20px;" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-instagram" style="font-size:20px;" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-facebook" style="font-size:20px;" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-twitter" style="font-size:20px;" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-youtube" style="font-size:20px;" aria-hidden="true"></i></a>
+            </div>
+
+        </div>   
+        <div class="fd">
+            <ul class="ull">
+                <li>About</li>
+                <br>
+                <li>Menu</li>
+                <br>
+                <li>Gift Cards</li>
+            </ul>
+        </div>
+        <div class="fd">
+            <ul class="ull">
+                <li>Franchise</li>
+                <br>
+                <li>Sustainability</li>
+                <br>
+                <li>Store Locator</li>
+                <br>
+                <li>Nutritional Info</li>
+            </ul>
+        </div>
+        <div class="fd">
+            <ul class="ull">
+                <li>Contact Us</li>
+                <br>
+                <li>Carriers</li>
+                <br>
+                <li>Blog</li>
+                <li style="margin-left: 80px;margin-top: 100px; position: absolute;"> © 2022, Polar Bear Ice Creams</li>
+            </ul>
+        </div>
+        
+    </div>
+</section>
+
+</body>
+<script>
+// modal Script
+function ab() {
+        var modal = document.getElementById("modal")
+        modal.style.display = "block"
+    }
+    function x() {
+        var modal = document.getElementById("modal")
+        modal.style.display = "none"
+    }
+    window.onclick = function (e) {
+        if (e.target == modal) {
+            modal.style.display = "none"
+        }
+    }
+    $(function(){
+       $("#ab").mouseenter(function(){
+        $("#hidee").slideDown()
+      })
+     $("#ab").mouseleave(function(){
+         $("#hidee").slideUp()
+    })
+
+    })
+// wow script
+new WOW().init();
+</script>
+</html>

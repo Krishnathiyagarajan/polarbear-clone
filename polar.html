@@ -1,0 +1,572 @@
+<!DOCTYPE html>   
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+            href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+        <!-- icons cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- animation style -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- js annimation style -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- wow.js animation -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+        </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        #nav{
+            width: 100%;
+            height: 80px;
+            display: flex;
+        }
+        #icon{
+            margin-top: 20px;
+            width: 20%;
+            list-style: none;
+            margin-left: 100px;
+        }
+        #nav1{
+            width: 80%;
+            margin-top: 15px;
+           
+        }
+        #nul{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+        #top{
+            width: 100%;
+            background-color: rgb(238, 234, 231);
+            justify-content: flex-end;
+            height: 20px;
+        }
+        #top1{
+            margin-left: 78%;
+        }
+        #nul li:hover{
+            color: aqua;
+        }
+        #banner{
+            width: 100%;
+            height: 490px;
+        }
+        #bancon{
+            width: 100%;
+            text-align: center;
+        }
+        #bancon h2{
+            text-transform: uppercase;
+        }
+        #card{
+            width: 90%;
+            margin-left: 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #card1{
+            width: 45%;
+        }
+        #card2{ 
+            width: 45%; 
+        }
+        #story{
+            width: 100%;
+            display: flex;
+            height: 500px;
+        }
+        #storydiv{
+            width: 50%;
+            background-color: gold;
+            padding-left: 150px;
+            padding-top: 100px;
+        }
+        #storydiv1{
+            width: 50%;
+        }
+        #approach{
+            width: 100%;
+            height: 550px;
+            background-color: rgb(18,163,196);
+            margin-top: 0px;
+        }
+        #approach1{
+            width: 90%;
+            margin-left: 5%;
+        }
+        #appdiv{
+            width: 90%;
+            margin-left: 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .appclass{
+            width: 30%;
+            height: 400px;
+        }
+        #approach h1{
+            color: white;
+        }
+        #own{
+            width: 90%;
+            margin-left: 5%;
+        }
+        #hidee{
+            width: 100%;position: absolute;justify-content: space-around;background-color: rgb(18,163,196);
+            height: 200px;
+            margin-top: -7px;
+            z-index: 1;display: none;
+            margin-left: -504px;
+            }
+            .h1{
+        border: 1px solid white;
+        height: 200px;
+        width: 100%;
+        padding-left: 10px;
+    }
+    .h1 h3{
+        color: rgb(252,213,72);
+    }
+       
+        .owncard{
+                width: 100%;
+                height: 600px;
+                display: flex;
+            }
+            .div1{
+                width: 40%;
+                padding-left: 50px;
+                padding-top: 10px;
+            }
+            .div2{
+                padding-left: 30px;
+                padding-top: 150px;
+            }
+            button {
+ --color:  rgb(18,163,196);
+ font-family: inherit;
+ display: inline-block;
+ width: 8em;
+ height: 2.6em;
+ line-height: 2.5em;
+ margin: 20px;
+ position: relative;
+ overflow: hidden;
+ border: 2px solid var(--color);
+ transition: color .5s;
+ z-index: 1;
+ font-size: 17px;
+ border-radius: 6px;
+ font-weight: 500;
+ color: var(--color);
+}
+
+button:before {
+ content: "";
+ position: absolute;
+ z-index: -1;
+ background: var(--color);
+ height: 150px;
+ width: 200px;
+ border-radius: 50%;
+}
+
+button:hover {
+ color: #fff;
+}
+
+button:before {
+ top: 100%;
+ left: 100%;
+ transition: all .7s;
+}
+
+button:hover:before {
+ top: -30px;
+ left: -30px;
+}
+
+button:active:before {
+ background: rgb(18,163,196);
+ transition: background 0s;
+}
+            #footer{
+                background-color: rgb(252,213,72);
+                width:100%;
+                height: 400px;
+            }
+            #foot{
+                width: 80%;
+                margin-left: 10%;
+                display: flex;
+                justify-content: space-around;
+                
+            }
+            .fd{
+                width: 23%;
+                height: 400px;
+                margin-top: 25px;
+            }
+            #ico{
+                width: 100%;
+                justify-content: space-around;
+                display: flex;
+            }
+            .ic1{
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                border: 1px solid black;
+                text-align: center;
+                padding-top: 8.5px;
+                margin-top: 100px;
+                background-color:black;
+                color: white;
+            }
+            .ic1:hover{
+                background-color:rgb(252,213,72) ;
+                color: white;
+            }
+            .ull{
+                list-style-type: none;
+                margin-top: 105px;
+            }
+            .ull li:hover{
+                color: grey;
+            }
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            .hidee h5{
+                color: rgb(252,213,72)
+            }
+        
+    </style>
+</head>
+<body>
+    <section id="top">
+        <div id="top1">For Polar Bear franchisee: <a href="#">Apply online / Email us.</a></div>
+    </section>
+    <section id="nav">
+        <div id="icon">
+            <li><a href="index.html"><img width="200px" src="imagepolar/icon.svg" alt=""></a></li>
+        </div>
+        <div id="nav1">
+            <ul id="nul">
+                <div id="ab">
+                    <div>
+                        <a  href="polar.html">
+                            <li>About</li>
+                        </a>
+                    </div>
+                    <br><br>
+                    <div id="hidee">
+                        <div style="display:flex;">
+                            <div class="h1">
+                                <h3>STORY</h3>
+                                <p>How our love for ice cream and the vision of scooping up happiness to customers all over the country transformed into Polar Bear – The Ice Cream Sundae Zone. </p></span>
+                            </div>
+                            <div class="h1">
+                                <h3>VALUES IN ACTION</h3>
+                                <p>How our love for ice cream and the vision of scooping up happiness to customers all over the country transformed into Polar Bear – The Ice Cream Sundae Zone. </p></span>
+                            </div>
+                            <div class="h1">
+                                <h3>Story</h3>
+                                <p>How our love for ice cream and the vision of scooping up happiness to customers all over the country transformed into Polar Bear – The Ice Cream Sundae Zone. </p></span>
+                            </div>
+                            <div class="h1">
+                                <h3>Story</h3>
+                                <p>How our love for ice cream and the vision of scooping up happiness to customers all over the country transformed into Polar Bear – The Ice Cream Sundae Zone. </p></span>
+                            </div>
+                            <div class="h1">
+                                <h3>Story</h3>
+                                <p>How our love for ice cream and the vision of scooping up happiness to customers all over the country transformed into Polar Bear – The Ice Cream Sundae Zone. </p></span>
+                            </div>
+                            <div class="h1">
+                                <h3>Story</h3>
+                                <p>How our love for ice cream and the vision of scooping up happiness to customers all over the country transformed into Polar Bear – The Ice Cream Sundae Zone. </p></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="menu.html">
+                    <li>Menu</li>
+                </a>
+                <li>Franchise</li>
+                <a href="more.html">
+                    <li>More Fun</li>
+                </a>
+               <a href="sustain.html">
+                <li>Sustainability</li>
+               </a>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="banner"       >
+        <img class="wow animate__animated animate__rubberBand" width="100%" src="imagepolar/about-banner.jpg" alt="">
+    </section>
+    <section id="bancon" class="wow animate__animated animate__zoomInDown">
+       <h2       > creating exciting sundaes for everyone, today and for generations to come. <br> that is why we exist.</h2>
+       <p> At Polar Bear – The Ice Cream Sundae Zone, we constantly work on how we can make the biggest difference to the lives of <br> customers and communities, safeguard the environment, and create significant value for all our stakeholders.</p>
+    </section>
+    <br>
+    <section id="card"       >
+        <div class="card1" style="text-align: center;"       >
+            <div class="wow animate__animated animate__fadeInBottomLeft">
+                <img width="100%" src="imagepolar/jayanagar-outlet.jpg" alt="">
+                <h2 class="wow animate__animated animate__zoomInDown" >2008</h2>
+            </div>
+        </div>
+        <div class="card2" style="text-align: center; " >
+            
+            <div class="wow animate__animated animate__fadeInBottomRight">
+                <img width="100%" src="imagepolar/mangalore-outlet.jpg" alt="">
+            </div>
+            <h2 class="wow animate__animated animate__zoomInUp">2021</h2>
+        </div>
+    </section>
+    <br>
+    <br>
+    <section  id="story"  class="wow animate__animated animate__rubberBand">
+        <div id="storydiv">
+            <h1>Story</h1>
+<p style="font-size: xx-large;">For over a decade, we’ve been motivated by our belief - that the world we want for our children starts with how we do business today.</p>
+<p>Polar Bear – The Sundae Ice Cream Zone has evolved to create products and <br> services that people love. Our story began when the founder, Kishore Rai <br> discovered his love for ice cream and created much-loved sundaes that stood the <br> test of time.</p>
+        </div>
+        <div id="storydiv1"       >
+            <img width="100%" height="500px" src="imagepolar/stroy.jpg" alt="">
+        </div>
+    </section>
+    <section id="approach" class="wow animate__animated animate__zoomInUp">
+        <div id="approach1">
+            <h1 style="font-size: xx-large;">OUR APPROACH</h1>
+            <p style="font-size: large;">We have worked on a clear direction and a moral compass for all of our people working across 100+ outlets. The long-term future of our business and the planet depends on us to stand for more and take bold action. That is why we take every opportunity to make a positive impact in this ever-changing world.</p>
+        </div>
+
+        <div id="appdiv">
+            <div class="appclass">
+                <div style="display: flex;" class="wow animate__animated animate__zoomInDown">
+                    <div style="width: 30%;">
+                        <img style="margin-top: 20px;" width="100%" src="imagepolar/icon-quality.png" alt="">
+                    </div>
+                    <div style="width: 70%;">
+                        <p><h1  class="wow animate__animated animate__flash">QUALITY</h1>
+                            We are committed to quality, because how our products are made matters to our customers, communities, and the environment.</p>
+                    </div>
+                </div>
+                <div style="display: flex; margin-top: 45px;"   class="wow animate__animated animate__zoomInUp"    >
+                    <div style="width: 50%;">
+                        <img style="margin-top: 30px;" width="100%" src="imagepolar/icon-transparency.png" alt="">
+                    </div>
+                    <div>
+                        <p><h1 class="wow animate__animated animate__flash"> TRANSPARENCY</h1>
+                            Transparency is woven into our DNA. We demonstrate honesty, accountability, and a genuine attitude in all business interactions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="appclass">
+                <div style="display: flex;"   class="wow animate__animated animate__zoomInDown"    >
+                    <div style="width: 30%;">
+                        <img style="margin-top: 20px;" width="100%" src="imagepolar/icon-customer-delight.png" alt="">
+                    </div>
+                    <div style="width: 70%;">
+                        <p><h1 class="wow animate__animated animate__flash">CUSTOMER DELIGHT</h1>                            
+We listen to our customers and create delightful experiences by surpassing their expectations with our products and services.</p>
+                    </div>
+                </div>
+                <div style="display: flex; margin-top: 45px;"   class="wow animate__animated animate__zoomInUp"    >
+                    <div style="width: 30%;">
+                        <img style="margin-top: 20px;" width="100%" src="imagepolar/icon-responsibility.png" alt="">
+                    </div>
+                    <div style="width: 70%;">
+                        <p><h1 class="wow animate__animated animate__flash"> RESPONSIBILITY</h1>
+For us, responsibility is all about ownership and clarity. We are responsible for the products that we provide to our customers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="appclass">
+                <div style="display: flex;margin-top: 40px;"   class="wow animate__animated animate__zoomInDown"    >
+                    <div style="width: 30%;">
+                        <img style="margin-top: 20px;" width="100%" src="imagepolar/icon-respect.png" alt="">
+                    </div>
+                    <div style="width: 70%;">
+                        <p><h1 class="wow animate__animated animate__flash">RESPECT</h1> 
+                            
+                            At Polar Bear, we show respect in the way we treat each other; the way we treat those we serve. <br> <br>
+                            Within the organization, we use people's ideas to change or improve the workplace. We embrace everyone for their uniqueness.    
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="own">
+        <div style="font-size: larger;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"       >
+            <h1 class="wow animate__animated animate__bounceIn">
+                WHAT OUR LEADERS HAVE TO SAY!
+            </h1>
+        </div>
+        
+        <section class="owncard animate__animated animate__bounceIn"      >
+            <div class="div1 wow animate__animated animate__flipInX"     >
+                <img width="100%"  src="imagepolar/kishore-kumar-1.png" alt="">
+            </div>
+            <div class="div2" style="width: 50%;"  class="wow animate__animated animate__flipInY"     >
+                <p > <span style="font-size: xx-large;" class="wow animate__animated animate__fadeIn">KISHORE KUMAR RAI</span>
+                </strong> <br>FOUNDER</p>
+                <br>
+   <p class="wow animate__animated animate__fadeIn">Polar Bear, the Ice Cream Sundae Zone, began its journey in the year 2008, with the first-ever parlour set up at ITPL in Bangalore. <br> <br>
+
+    When we stepped into the market, the ice-cream industry in India was booming. We spent a lot of time on research and trying to understand the Indian audience. We created new and existing flavours, gave a makeover to the age-old sundae recipes, and made magic that appealed to the varied tastes of the diverse Indian customer. Our ice creams are 100% dairy and 100% veg, and are made with the best ingredients, in the best facility, with utmost hygiene and lots of love.
+    </p>   
+    <a class="wow animate__animated animate__fadeIn" href="https://polarbear.co.in/wp-content/uploads/2022/02/Kishore-optimised.mp4">
+        <button>Watch Video</button>
+    </a>  
+</div>
+</section>
+<br>
+<!-- second own -->
+<section class="owncard animate__animated animate__bounceIn">
+    <div class="div1 wow animate__animated animate__flipInY">
+        <img width="100%" src="imagepolar/prashanth-prakash.png" alt="">
+    </div>
+    <div class="div2 wow animate__animated animate__flipInX" style="width: 50%;"  >
+        <p > <span style="font-size: xx-large;" class="wow animate__animated animate__fadeIn">PRASHANTH PRAKASH</span>
+        </strong> <br>GENERAL MANAGER - OPERATIONS</p>
+        <br>
+<p class="wow animate__animated animate__fadeIn">Ice cream is the go-to dessert for Indians after a wholesome meal. We tapped on the everlasting Indian craving for ice creams to create an unforgettable ice cream experience for our customers. We offer 70+ natural and exotic flavours in our lip-smacking range of ice-cream sundaes, shakes, cakes, and more, at our vibrant and cheerful outlets. <br> <br>
+
+    Little did we know that our brand will be cherished and widely recognized by the Indian audience within a short span of 13 years!
+</p>
+<a class="wow animate__animated animate__fadeIn" href="https://polarbear.co.in/wp-content/uploads/2022/02/Kishore-optimised.mp4">
+<button class="wow animate__animated animate__fadeIn">Watch Video</button>
+</a>  
+</div>
+</section>
+<br>
+<!-- thirdown -->
+<section class="owncard animate__animated animate__bounceIn">
+    <div class="div1 wow animate__animated animate__flipInX"    >
+        <img width="100%" src="imagepolar/k-s-narayanan.jpg" alt="">
+    </div>
+    <div class="div2" style="width: 50%;"  class="wow animate__animated animate__flipIny"     >
+        <p class="wow animate__animated animate__fadeIn" > <span style="font-size: xx-large;">K S NARAYANAN</span>
+        </strong> <br>MENTOR</p>
+        <br>
+<p class="wow animate__animated animate__fadeIn">Polar Bear has always taken great pride in its unlimited passion for ice cream and ice cream sundaes. A unique blend of the good-old and many-a-new, the brand has carved an identity for itself. <br><br>
+
+    I’m happy to be associated with a brand where the safety of customers and employees is paramount. Everything we do, we do to see you smile in delight! We’re here to keep the ice cream dream alive.
+    
+</p>
+<a class="wow animate__animated animate__fadeIn" href="https://polarbear.co.in/wp-content/uploads/2022/02/Kishore-optimised.mp4">
+<button>Watch Video</button>
+</a>  
+</div>
+</section>
+<br>
+<!-- four own -->
+<section class="owncard animate__animated animate__bounceIn">
+    <div class="div1 wow animate__animated animate__flipInY"      >
+        <img width="100%" src="imagepolar/k-v-rajendra-regde.jpg" alt="">
+    </div>
+    <div class="div2 wow animate__animated animate__flipInX" style="width: 50%;"       >
+       <p > <span style="font-size: xx-large;">K V RAVENDR HEDGE</span>
+            </strong> <br>CHIEF HUMAN RESOURCES OFFICER</p>
+            <br>
+<p>Polar Bear has always taken great pride in its unlimited passion for ice cream and ice cream sundaes. A unique blend of the good-old and many-a-new, the brand has carved an identity for itself. <br><br>
+
+    I’m happy to be associated with a brand where the safety of customers and employees is paramount. Everything we do, we do to see you smile in delight! We’re here to keep the ice cream dream alive.
+    
+</p>
+<a class="wow animate__animated animate__fadeIn" href="https://polarbear.co.in/wp-content/uploads/2022/02/Kishore-optimised.mp4">
+<button>Watch Video</button>
+</a>  
+</div>
+</section>
+    </section>
+    <br><br><br>
+<section id="footer">
+    <div id="foot">
+        <div class="fd">
+            <div  id="ico">
+            <div class="ic1">
+                <i class="fa fa-linkedin" style="font-size:25px;" aria-hidden="true"></i>
+            </div>
+           <div class="ic1">
+            <i class="fa fa-instagram" style="font-size:25px;" aria-hidden="true"></i>
+           </div>
+            <div class="ic1">
+                <i class="fa fa-facebook" style="font-size:25px;" aria-hidden="true"></i>
+            </div>
+            <div class="ic1">
+                <i class="fa fa-twitter" style="font-size:25px;" aria-hidden="true"></i>
+            </div>
+            <div class="ic1">
+                <i class="fa fa-youtube" style="font-size:25px;" aria-hidden="true"></i>
+            </div>
+            </div>
+
+        </div>   
+        <div class="fd">
+            <ul class="ull">
+                <li>About</li>
+                <br>
+                <li>Menu</li>
+                <br>
+                <li>Gift Cards</li>
+            </ul>
+        </div>
+        <div class="fd">
+            <ul class="ull">
+                <li>Franchise</li>
+                <br>
+                <li>Sustainability</li>
+                <br>
+                <li>Store Locator</li>
+                <br>
+                <li>Nutritional Info</li>
+            </ul>
+        </div>
+        <div class="fd">
+            <ul class="ull">
+                <li>Contact Us</li>
+                <br>
+                <li>Carriers</li>
+                <br>
+                <li>Blog</li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+</body>
+<script>
+    // jquery
+    $(function(){
+       $("#ab").mouseenter(function(){
+        $("#hidee").slideDown()
+      })
+     $("#ab").mouseleave(function(){
+         $("#hidee").slideUp()
+    })
+
+    })
+    // wow script
+new WOW().init();
+
+
+</script>
+</html>

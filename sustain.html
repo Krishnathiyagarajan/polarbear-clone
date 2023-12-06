@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+            href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+     <!-- icons cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- animation style -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!-- js annimation style -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<style>
+    a{
+            text-decoration: none;
+            color: black;
+        }
+    #nav{
+            width: 100%;
+            height: 80px;
+            display: flex;
+        }
+        #icon{
+            margin-top: 20px;
+            width: 20%;
+            list-style: none;
+            margin-left: 100px;
+        }
+        #nav1{
+            width: 80%;
+            margin-top: 15px;
+           
+        }
+        #nul{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+        #top{
+            width: 100%;
+            background-color: rgb(238, 234, 231);
+            justify-content: flex-end;
+            height: 20px;
+        }
+        #top1{
+            margin-left: 78%;
+        }
+        #nul li:hover{
+            color: aqua;
+        }
+        body{
+                margin: 0;
+                padding: 0;
+            }
+            #sus{
+            position:relative;
+            height: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        #banner{
+            position: absolute;
+            width: 100%;
+            height: 400px;
+        }
+        #b1{
+            padding-top: 280px;
+            position: absolute;
+            width: 100%;
+            color: white;
+
+        }
+        #b2{
+            text-align: center;
+            position: relative;
+            font-size:larger;
+            height: 85px;
+            line-height: 30px;
+        }
+        .card{
+            width: 80%;
+            margin-left: 10%;
+            height: 450px;
+            display: flex;
+        }
+        .car{
+            width: 45%;
+            height: 450px;
+            margin-left: 2.5%;
+        }
+        .car strong{
+            font-size: xx-large;
+            margin-top: 100px;
+            
+        }
+        .cp{
+            padding-top: 130px;
+            
+        }
+            #footer{
+                background-color: rgb(252,213,72);
+                width:100%;
+                height: 400px;
+            }
+            #foot{
+                width: 80%;
+                margin-left: 10%;
+                display: flex;
+                justify-content: space-around;
+                
+            }
+            .fd{
+                width: 23%;
+                height: 400px;
+                margin-top: 25px;
+            }
+            .ull{
+                list-style-type: none;
+                margin-top: 105px;
+            }
+            .ull li:hover{
+                color: grey;
+            }
+            #ico{
+                width: 100%;
+                justify-content: space-around;
+                display: flex;
+                margin-top: 125px;
+            }
+            #ico a{
+                padding: 5px;
+                border-radius: 50%;
+                border: 1px solid black;
+                background-color:black;
+                color: white;
+            }
+            #ico a:hover{
+                background-color:  rgb(252,213,72); 
+                color:black;
+            }
+            #hidee{
+            width: 100%;position: absolute;justify-content: space-around;background-color: rgb(18,163,196);
+            height: 200px;
+            margin-top: -7px;
+            z-index: 1;display: none;
+            margin-left: -504px;
+            }
+            .h1{
+        border: 1px solid white;
+        height: 200px;
+        width: 100%;
+        padding-left: 10px;
+    }
+    .h1 h3{
+        color: rgb(252,213,72);
+    }
+</style>
+<body>
+    <section id="top">
+        <div id="top1">For Polar Bear franchisee: <a href="#">Apply online / Email us.</a></div>
+    </section>
+    <section id="nav">
+        <div id="icon">
+            <a href="index.html">
+                <li><img width="200px" src="imagepolar/icon.svg" alt=""></li>
+            </a>
+        </div>
+        <div id="nav1">
+            <ul id="nul">
+                <div id="ab">
+                    <div>
+                        <a  href="polar.html">
+                            <li>About</li>
+                        </a>
+                    </div>
+                    <br><br>
+                    <div id="hidee">
+                        <div style="display:flex;">
+                            <div class="h1">
+                                <h3>STORY</h3>
+                                <p>How our love for ice cream and the vision of scooping up happiness to customers all over the country transformed into Polar Bear – The Ice Cream Sundae Zone. </p></span>
+                            </div>
+                            <div class="h1">
+                                <h3>VALUES IN ACTION</h3>
+                                <p>How our love for ice cream and the vision of scooping up happiness to customers all over the country transformed into Polar Bear – The Ice Cream Sundae Zone. </p></span>
+                            </div>
+                            <div class="h1">
+                                <h3>Story</h3>
+                                <p>How our love for ice cream and the vision of scooping up happiness to customers all over the country transformed into Polar Bear – The Ice Cream Sundae Zone. </p></span>
+                            </div>
+                            <div class="h1">
+                                <h3>Story</h3>
+                                <p>How our love for ice cream and the vision of scooping up happiness to customers all over the country transformed into Polar Bear – The Ice Cream Sundae Zone. </p></span>
+                            </div>
+                            <div class="h1">
+                                <h3>Story</h3>
+                                <p>How our love for ice cream and the vision of scooping up happiness to customers all over the country transformed into Polar Bear – The Ice Cream Sundae Zone. </p></span>
+                            </div>
+                            <div class="h1">
+                                <h3>Story</h3>
+                                <p>How our love for ice cream and the vision of scooping up happiness to customers all over the country transformed into Polar Bear – The Ice Cream Sundae Zone. </p></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="menu.html">
+                    <li>Menu</li>
+                </a>
+                <li>Franchise</li>
+                <a href="more.html">
+                    <li>More Fun</li>
+                </a>
+                <a href="sustain.html">
+                    <li>Sustainability</li>
+                </a>
+            </ul>
+        </div>
+    </section>
+    <section id="sus" data-aos="flip-down">
+        <div id="banner" >
+            <img width="100%" height="600px" src="imagepolar/sustaiability-banner.jpg" alt="">
+        </div>
+        <div id="b1">
+            <strong style="font-size: 45px;"  data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000"> OUR PLANET MATTERS</strong>
+            <p><strong style="font-size: x-large;"  data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
+                WE ACT IN WAYS TO CREATE A MORE SUSTAINABLE AND BETTER SHARED FUTURE. TO MAKE A <br> DIFFERENCE IN PEOPLE'S LIVES, COMMUNITIES AND OUR PLANET BY DOING BUSINESS THE RIGHT WAY.
+            </strong>
+</p>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section id="b2" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+        We continue to prioritize our sustainability goals as the business emerges stronger from the global pandemic while constantly focusing our energy <br> and resources where our products can make the greatest difference to the lives of customers and communities, protect and enhance the <br> environment, and generate significant value for our shareholders and stakeholders alike.
+    </section>
+    <br>
+    <br>
+    <br>
+    <section class="card" data-aos="flip-left" data-aos-delay="1000" data-aos-duration="1000">
+        <div class="car" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000">
+            <img width="100%" height="450px" src="imagepolar/UN.jpg" alt="">
+        </div>
+        <div class="car" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
+            <p class="cp">
+                <strong >
+                    ALIGNING OURSELVES WITH <br> THE UNITED NATIONS' <br> SUSTAINABLE <br> DEVELOPMENT GOALS.
+                </strong>
+            </p>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section class="card" data-aos="flip-right" data-aos-delay="1000" data-aos-duration="1000">
+        <div class="car" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
+            <p class="cp" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000">
+                    <strong>
+                        NO GREENHOUSE GASES IN REFRIGERATION UNIT
+                    </strong>
+            </p>
+            <p style="font-size: large;line-height: 30px;" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
+                At Polar Bear, we have worked towards indulging in our guilty pleasure with a clear green conscience? We have made a switch to green refrigeration and better insulation in ice-cream freezers. This effort from our side will help to slash greenhouse gas emissions.
+            </p>
+            
+        </div>
+        <div class="car" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000">
+            <img width="100%" height="450px" src="imagepolar/Fridge-1.jpg" alt="">
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section class="card" data-aos="flip-left" data-aos-delay="1000" data-aos-duration="1000">
+        <div class="car" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000">
+            <img width="100%" height="450px" src="imagepolar/sustaiability-3.jpg" alt="">
+        </div>
+        <div class="car" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
+            <p class="cp" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000">
+                <strong >
+                    REDUCING OUR CARBON FOOTPRINT
+                </strong>
+                </p>
+                <p style="font-size: large; line-height: 30px;">We have moved to using complete LED lighting in all our outlets. With an estimated energy efficiency of 80-90% compared to conventional light bulbs, LEDs significantly reduce energy consumption, thus making them environmentally sustainable.
+            </p>
+        </div>
+    </section>
+    <br><br><br>
+    <section class="card" data-aos="flip-right" data-aos-delay="1000" data-aos-duration="1000">
+        <div class="car" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
+            <p class="cp">
+                    <strong>
+                        GIVING OUR CUSTOMERS OPTIONS AND CHOICES
+                    </strong>
+            </p>
+            <p style="font-size: large;line-height: 30px;">
+                We are evolving our business strategy to become a total Sundae company by giving people more of the choices they want. This includes innovating newer recipes, reducing added sugar products, adding natural range, using fresh fruits in our sundaes, and making different packaging sizes more available to enable portion control.
+            </p>
+            
+        </div>
+        <div class="car" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000">
+            <img width="100%" height="450px" src="imagepolar/sustaiability-2.jpg" alt="">
+        </div>
+    </section>
+    <br><br><br>
+    <section class="card" data-aos="flip-left" data-aos-delay="1000" data-aos-duration="1000">
+        <div class="car" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000">
+            <img width="100%" height="450px" src="imagepolar/sustaiability-4.jpg" alt="">
+        </div>
+        <div class="car" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
+            <p class="cp">
+                <strong >
+                    RETHINKING PACKAGING
+                </strong>
+                </p>
+                <p style="font-size: large; line-height: 30px;">We recognize our responsibility to help solve the global plastic waste crisis. Our ambitious sustainable packaging initiative aims to create systemic change for our packaging, by using paper bags, paper cups, and glass bottles for Takeaway. We will slowly move into more sustainable ways of delivering our products.
+            </p>
+        </div>
+    </section>
+    <br><br><br>
+    <section class="card" data-aos="flip-right" data-aos-delay="1000" data-aos-duration="1000">
+        <div class="car" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
+            <p class="cp">
+                    <strong>
+                        IMPROVING THE LIFE OF OUR COMMUNITY
+                    </strong>
+            </p>
+            <p style="font-size: large;line-height: 30px;">
+                At Polar Bear, we truly believe that everyone working within our extended supply chains should earn a sufficient income to maintain a decent standard of living.
+            </p>
+        </div>
+        <div class="car" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000">
+            <img width="100%" height="450px" src="imagepolar/sustaiability-5.jpg" alt="">
+        </div>
+    </section>
+    <br><br><br>
+    <section id="footer">
+        <div id="foot">
+            <div class="fd">
+                <div  id="ico">
+                <a href=""><i class="fa fa-linkedin" style="font-size:20px;" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-instagram" style="font-size:20px;" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-facebook" style="font-size:20px;" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-twitter" style="font-size:20px;" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-youtube" style="font-size:20px;" aria-hidden="true"></i></a>
+                </div>
+    
+            </div>   
+            <div class="fd">
+                <ul class="ull">
+                    <li>About</li>
+                    <br>
+                    <li>Menu</li>
+                    <br>
+                    <li>Gift Cards</li>
+                </ul>
+            </div>
+            <div class="fd">
+                <ul class="ull">
+                    <li>Franchise</li>
+                    <br>
+                    <li>Sustainability</li>
+                    <br>
+                    <li>Store Locator</li>
+                    <br>
+                    <li>Nutritional Info</li>
+                </ul>
+            </div>
+            <div class="fd">
+                <ul class="ull">
+                    <li>Contact Us</li>
+                    <br>
+                    <li>Carriers</li>
+                    <br>
+                    <li>Blog</li>
+                    <li style="margin-left: 80px;margin-top: 100px; position: absolute;"> © 2022, Polar Bear Ice Creams</li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+</body>
+<script>
+    // AOS SCRIPT
+
+AOS.init();
+ // jquery
+ $(function(){
+       $("#ab").mouseenter(function(){
+        $("#hidee").slideDown()
+      })
+     $("#ab").mouseleave(function(){
+         $("#hidee").slideUp()
+    })
+
+    })
+</script>
+</html>
